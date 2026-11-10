@@ -43,7 +43,14 @@ Le niveau de contrôle évolue selon l'historique du fournisseur : normal, renfo
 
 Les captures ont été réalisées avec des données de test.
 
-Technologies : React, TypeScript, Vite, Tailwind, Supabase (PostgreSQL et authentification).
+Technologies : React, TypeScript, Vite, Tailwind, Supabase (PostgreSQL, authentification et fonction serveur).
+
+| Dossier | Rôle |
+|---|---|
+| `src/components/` | Pages par profil : `magasinier/` (réception, inspection), `responsable/` (tableau de bord, alertes), `shared/` (historique, aide ISO) |
+| `src/utils/iso2859-data.ts` | Tables de la norme : lettre-code, taille d'échantillon, critères Ac/Re |
+| `src/supabase/functions/server/` | API côté serveur : lots, inspections, passage normal / renforcé / réduit |
+| `src/components/ui/` | Composants d'interface [shadcn/ui](https://ui.shadcn.com/) (licence MIT) |
 
 ## Lancer le projet
 
