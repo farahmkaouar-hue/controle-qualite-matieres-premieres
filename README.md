@@ -2,7 +2,7 @@
 
 Application web réalisée pendant mon stage chez SIDILEC International (juin – juillet 2025), fabricant de câbles pour l'automobile. Elle numérise la réception et le contrôle qualité des matières premières selon la norme **ISO 2859-1**.
 
-![Écran de connexion](captures/connexion.png)
+![Tableau de bord qualité](captures/tableau_de_bord.png)
 
 ## 1. Diagnostic
 
@@ -28,6 +28,20 @@ Le niveau de contrôle évolue selon l'historique du fournisseur : normal, renfo
 - **Passage automatique** entre contrôle normal, renforcé et réduit.
 - **Tableau de bord** du responsable qualité : statistiques, alertes et historique.
 - Deux profils : magasinier et responsable qualité.
+
+**Réception d'un lot** : le magasinier enregistre le produit, le fournisseur et la quantité ; le numéro de lot est généré automatiquement.
+
+![Réception](captures/reception.png)
+
+**Inspection** : l'application calcule l'échantillon (ici 125 unités, Ac = 5, Re = 6), classe les défauts et propose la décision (4 défauts ≤ 5 : lot accepté).
+
+![Inspection](captures/inspection.png)
+
+**Historique** des réceptions et des inspections, avec le statut et la décision de chaque lot.
+
+![Historique](captures/historique.png)
+
+Les captures ont été réalisées avec des données de test.
 
 Technologies : React, TypeScript, Vite, Tailwind, Supabase (PostgreSQL et authentification).
 
